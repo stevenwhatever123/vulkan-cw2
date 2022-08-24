@@ -658,24 +658,24 @@ namespace
 
 		aSceneUniforms.cameraPos = glm::vec4(0, 0, 0, 0);
 
-		//aSceneUniforms.lightPos[0] = glm::vec4(-20, 15.3f, -3.0f, 1.0f);
-		//aSceneUniforms.lightColor[0] = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f);
-		//aSceneUniforms.lightPos[1] = glm::vec4(0, 15.3f, -3.0f, 1.0f);
-		//aSceneUniforms.lightColor[1] = glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);
-		//aSceneUniforms.lightPos[2] = glm::vec4(20, 15.3f, -3.0f, 1.0f);
-		//aSceneUniforms.lightColor[2] = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
+		aSceneUniforms.lightPos[0] = glm::vec4(-20, 15.3f, -3.0f, 1.0f);
+		aSceneUniforms.lightColor[0] = glm::vec4(1.0f, 0.0f, 0.0f, 1.0f);
+		aSceneUniforms.lightPos[1] = glm::vec4(0, 15.3f, -3.0f, 1.0f);
+		aSceneUniforms.lightColor[1] = glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);
+		aSceneUniforms.lightPos[2] = glm::vec4(20, 15.3f, -3.0f, 1.0f);
+		aSceneUniforms.lightColor[2] = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
 
 		aSceneUniforms.rotation = rotationMatrix;
 
 		aSceneUniforms.size = numLight;
 
 		// Default
-		aSceneUniforms.lightPos[0] = glm::vec4(0, 9.3f, -3.0f, 1.0f);
-		aSceneUniforms.lightColor[0] = glm::vec4(1.0f, 1.0f, 0.8f, 1.0f);
-		aSceneUniforms.lightPos[1] = glm::vec4(0, 9.3f, -3.0f, 1.0f);
-		aSceneUniforms.lightColor[1] = glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);
-		aSceneUniforms.lightPos[2] = glm::vec4(0, 9.3f, -3.0f, 1.0f);
-		aSceneUniforms.lightColor[2] = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
+		//aSceneUniforms.lightPos[0] = glm::vec4(0, 9.3f, -3.0f, 1.0f);
+		//aSceneUniforms.lightColor[0] = glm::vec4(1.0f, 1.0f, 0.8f, 1.0f);
+		//aSceneUniforms.lightPos[1] = glm::vec4(0, 9.3f, -3.0f, 1.0f);
+		//aSceneUniforms.lightColor[1] = glm::vec4(0.0f, 1.0f, 0.0f, 1.0f);
+		//aSceneUniforms.lightPos[2] = glm::vec4(0, 9.3f, -3.0f, 1.0f);
+		//aSceneUniforms.lightColor[2] = glm::vec4(0.0f, 0.0f, 1.0f, 1.0f);
 	}
 
 	void update_material_uniforms(glsl::MaterialUniform& aMaterialUniforms, glm::vec4 emissive,
